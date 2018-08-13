@@ -1,0 +1,72 @@
+key: value
+key2:
+  child-key: value
+  child-key2: value2
+key3: {child-key1: value1,child-key2: value2}
+?
+  - complexkey1
+  - complexkey2
+:
+  - complexvalue1
+  - complexvalue2
+hobby:
+-
+  - java
+  - LOL
+companies:
+  -
+    id: 1
+    name: company1
+    price: 200W
+  -
+    id: 2
+    name: company2
+    price: 500W
+boolean:
+  - true
+  - FALSE
+float:
+  - 3.14
+  - 6.875355335
+null:
+  nodeName: 'node'
+  parent: ~
+string:
+  - 哈哈
+  - 'Hello World'
+  - newline
+    newline2
+date:
+  - 2018-08-13
+datatime:
+  - 2018-08-13T10:48:40+08:00
+...
+---
+spring:
+  profiles: development
+  server:
+    address: 127.0.0.1
+...
+---
+spring:
+  profiles: production
+  server:
+    address: 192.168.1.120
+  string:
+    - !!str 1234
+    - !!str true
+  sets:
+    - yuhaiwei: 23
+    - lisi: 24
+    - zhangsan: 26
+  lines: >
+    Mark set a major league
+    home run record in 1998.
+  stats: |
+    65 Home Runs
+    0.278 Batting Average
+  phraseTemplate: |
+    <p style="color: red">
+      some template ${msg}
+    </p>
+...

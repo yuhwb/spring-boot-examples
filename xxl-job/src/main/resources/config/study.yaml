@@ -1,0 +1,48 @@
+age : 12
+name : huang
+s : [a,b,c]
+o : {age : 12,name : yuhaiwei}
+arr :
+- a
+- b
+- c
+- 2
+websites :
+ YAML : yaml.org
+ Ruby : ruby-lang.org
+ Python : python.org
+ Perl : use.perl.org
+languages :
+- Ruby
+- Python
+- Perl
+- c
+languagess :
+-
+ - ruby
+ - perl
+ - python
+-
+ - c
+ - c++
+ - java
+languagesss :
+- - ruby
+  - perl
+  - python
+- - c
+  - c++
+  - java
+languagessss :
+- [ruby,perl,python]
+- [c,c++,java]
+languagesssss :
+-
+  id : 1
+  name : zhangsan
+  age : 12
+-
+  id : 2
+  name : lisi
+  age : 18
+
